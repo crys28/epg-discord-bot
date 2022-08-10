@@ -14,7 +14,7 @@ const request = require('request-promise');
 const cheerio = require('cheerio');
 const fs = require('fs');
 
-const { token } = require('./config.json');
+// const { token } = require('./config.json');
 
 const Discord = require('discord.js')
 const { userInfo } = require('os')
@@ -452,7 +452,7 @@ const URL = "https://gg.deals/deals/best-deals/";
 
 
           
-              client.login(token)
+              client.login(process.env.BOT_TOKEN)
               
               
              
